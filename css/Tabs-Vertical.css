@@ -1,0 +1,67 @@
+.tabs-vertical .tabs {
+    height: auto;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tabs-vertical .tab {
+    width: 100%;
+    margin: 2%;
+}
+
+.tabs-vertical .tab h5 {
+    color: rgb(46, 46, 46);
+    margin: 1px;
+    font-weight: 500;
+}
+
+.tabs-vertical .indicator {
+    display: none;
+}
+
+.tabs-vertical ul li>div p {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    border-bottom: 1px solid #ff8f00;
+    width: 70px;
+    height: 30px;
+}
+
+.tabs-vertical ul li:after {
+    background: #000;
+    opacity: .1;
+}
+
+.tabs-vertical ul li:hover {
+    color: #fff;
+    font-weight: 500;
+}
+
+.tabs-vertical ul li:hover h1 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.tabs-vertical ul li.active h5 {
+    border-bottom: 1px solid #ff8f00;
+    font-weight: 500;
+    height: 40px;
+    transition: background 0.25s, color 0.25s, height 0.5s 0.25s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+.tabs-vertical ul li.active h5 {
+    color: #ff8f00;
+    font-weight: 500;
+    width: 0px;
+    height: 40px;
+}
+
+.tabs-vertical ul li.active>div {
+    left: 0;
+    background: #d40050;
+    transition: left 0.5s cubic-bezier(0.75, 0, 0.25, 1);
+}
